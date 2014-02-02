@@ -1,5 +1,7 @@
 # uuid
 
+[![Build Status](https://travis-ci.org/listora/uuid.png?branch=master)](https://travis-ci.org/listora/uuid)
+
 A Clojure library designed to ease working with UUIDs that have been
 converted to strings, perhaps by a third-party in JSON.
 
