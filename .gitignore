@@ -1,0 +1,11 @@
+*.class
+*.jar
+/.lein-*
+/.nrepl-port
+/checkouts
+/classes
+/doc
+/docs
+/target
+pom.xml
+pom.xml.asc
