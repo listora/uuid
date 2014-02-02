@@ -7,7 +7,7 @@ converted to strings, perhaps by a third-party in JSON.
 
 ## Installation
 
-![Leiningen version](https://clojars.org/listora/uuid/latest-version.svg)
+[![Leiningen version](https://clojars.org/listora/uuid/latest-version.svg)](https://clojars.org/listora/uuid)
 
 ## Usage
 
