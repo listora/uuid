@@ -64,3 +64,4 @@
 
 (defmethod uuid String [x] (parse-string x))
 (defmethod uuid java.util.UUID [x] x)
+(defmethod uuid nil [_] nil)

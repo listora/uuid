@@ -43,14 +43,15 @@
     (is (thrown? IllegalArgumentException (parse-string "a" :strict)))))
 
 (deftest test-uuid
-  (let [uuid-instance (java.util.UUID/fromString uuid-string)]
+  (testing "with a UUID-like string"
+    (let [x (uuid uuid-string)]
+      (is (instance? java.util.UUID x))
+      (is (= (str x) uuid-string))))
 
-    (testing "with a UUID-like string"
-      (let [x (uuid uuid-string)]
-        (is (instance? java.util.UUID x))
-        (is (= (str x) uuid-string))))
+  (testing "with nil"
+    (is (nil? (uuid nil))))
 
-    (testing "with a UUID"
-      (let [x (uuid uuid-instance)]
-        (is (instance? java.util.UUID x))
-        (is (= (str x) uuid-string))))))
+  (testing "with a UUID"
+    (let [x (uuid (java.util.UUID/fromString uuid-string))]
+      (is (instance? java.util.UUID x))
+      (is (= (str x) uuid-string)))))
