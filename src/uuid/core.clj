@@ -54,6 +54,11 @@
        (from-string s)
        (catch IllegalArgumentException _ nil)))))
 
+(defn rand-uuid
+  "Returns a random java.util.UUID."
+  []
+  (java.util.UUID/randomUUID))
+
 (defmulti uuid
   "Defines transformations to UUIDs.
 
