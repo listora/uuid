@@ -42,6 +42,9 @@
   (testing "with strict truthy"
     (is (thrown? IllegalArgumentException (parse-string "a" :strict)))))
 
+(deftest test-rand-uuid
+  (is (instance? java.util.UUID (rand-uuid))))
+
 (deftest test-uuid
   (testing "with a UUID-like string"
     (let [x (uuid uuid-string)]
