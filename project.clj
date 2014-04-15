@@ -1,4 +1,4 @@
-(defproject listora/uuid "0.1.2"
+(defproject listora/uuid "0.1.3-SNAPSHOT"
   :description "Functions for working with UUIDs in string form"
   :url "https://github.com/listora/uuid"
   :license {:name "Eclipse Public License"
